@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="theme.css">
+        <title>Rainier Riot 2019 Notable Performances</title>
+        <style> 
+            input[type=submit] {
+                background-color: orange;
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 12px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="field">
+          <form action="action_page.php">
+			  
+			<div class="field">
+                <label for="award">Season</label>
+                    <select id="season" name="season">
+                        <option value="" disabled selected>Select Season</option>
+                        <option value="Winter 2019">Winter 2019</option>
+                        <option value="Spring 2019">Spring 2019</option>
+                        <option value="Summer 2019">Summer 2019</option>
+						<option value="Fall 2019">Fall 2019</option>
+                    </select>
+            </div>  
+			  
+			<div class="field">
+                <label for="name">Opponent</label>
+                <input type="text" id="opponent" name="opponent" placeholder="Opposing Team">
+            </div>
+			  
+			<div class="field">
+                <label for="name">Player Name</label>
+                <input type="text" id="pname" name="playername" placeholder="Player Name">
+            </div>
+            
+            <div class="field">
+			<label for="assist">Goals Scored</label>
+				<select id="goals" name="goals">
+					<option value="" disabled selected>Number of Goals</option>
+					<option value="one">1</option>
+					<option value="two">2</option>
+					<option value="three">3</option>
+					<option value="four">4</option>
+					<option value="five">5</option>
+				</select>
+            </div> 
+			  
+		  	<div class="field">
+			<label for="assist">Assists</label>
+				<select id="assists" name="assists">
+					<option value="" disabled selected>Number of Assists</option>
+					<option value="one">1</option>
+					<option value="two">2</option>
+					<option value="three">3</option>
+					<option value="four">4</option>
+					<option value="five">5</option>
+				</select>
+            </div> 
+			  
+			  
+			  
+			  
+			<div class="field">
+                <label for="position">Yellow Card</label>
+                <input type="radio" name="yellowresponse" value="yes"> Yes
+  				<input type="radio" name="yellowresponse" value="no"> No
+            </div>
+			  
+			<div class="field">
+                <label for="position">Red Card</label>
+                <input type="radio" name="redresponse" value="yes"> Yes
+  				<input type="radio" name="redresponse" value="no"> No
+            </div>
+
+            <div class="field">
+                <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+    </body>
+</html>
